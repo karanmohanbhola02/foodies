@@ -6,6 +6,7 @@ import DetailBarItem from '../components/shared/DetailBarItem';
 import Button from '../components/buttons/Button';
 import InfoList from '../components/InfoList';
 import IngredientModal from '../components/modals/IngredientModal';
+import ImageGallery from '../components/ImageGallery';
 
 import styles from './recipe-styles';
 class Recipes extends React.PureComponent {
@@ -23,6 +24,7 @@ class Recipes extends React.PureComponent {
     render() {
         return (            
             <View style={styles.container}>
+                <ImageGallery />
                 <DetailsBar>
                     <DetailBarItem icon={require('../assets/icons/recipesSelected.png')} title={'6 people'} />
                     <DetailBarItem icon={require('../assets/icons/recipesSelected.png')} title={'45 minutes'} />

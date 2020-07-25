@@ -71,18 +71,9 @@ const RecipesNavigator = () => {
             <Stack.Screen 
                 name={screenNames.RECIPE} 
                 component={Recipe}
-                options={({ route }) => ({ 
-                    headerTitle: null,
-                    headerRight: () => (
-                        <TouchableOpacity style={{ paddingHorizontal: 15 }} onPress={() => alert('Search!')} hitSlop={{ top: 20, left: 20, bottom: 20, right: 20 }}>
-                            <FastImage
-                                style={{ width: 20, height: 20 }}
-                                source={require('../assets/icons/search.png')}
-                                resizeMode={FastImage.resizeMode.contain}
-                            />
-                        </TouchableOpacity>
-                    )
-                })}
+                options={{
+                    headerShown: false
+                }}
             />
         </Stack.Navigator>
     );

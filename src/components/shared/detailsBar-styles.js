@@ -8,15 +8,13 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         padding: 12,
         backgroundColor: palette.white,
-        shadowColor: '#000',
+        shadowColor: 'rgba(0, 0, 0, 0.08)',
         shadowOffset: {
-            width: 2,
-            height: 0,
+            width: 0,
+            height: 1
         },
-        shadowOpacity: 0.25,
-        shadowRadius: 3.84,
-        elevation: 5,
-        zIndex: 1
+        shadowRadius: 0,
+        shadowOpacity: 1
     }
 });
 
