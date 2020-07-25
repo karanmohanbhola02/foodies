@@ -9,6 +9,7 @@ import IngredientModal from '../components/modals/IngredientModal';
 import ImageGallery from '../components/ImageGallery';
 
 import styles from './recipe-styles';
+import Header from '../components/shared/Header';
 class Recipes extends React.PureComponent {
 
     state = {
@@ -22,9 +23,16 @@ class Recipes extends React.PureComponent {
     }
 
     render() {
-        return (            
+        return (
             <View style={styles.container}>
-                <ImageGallery />
+                <View style={styles.header}>
+                    <Header 
+                        prevTitle={'Recipes'} 
+                        isBackgroundTransparent
+                        rightIconSource={require('../assets/icons/bookmark.png')}
+                        navigation={this.props.navigation} />
+                </View>
+                <ImageGallery navigation={this.props.navigation} />
                 <DetailsBar>
                     <DetailBarItem icon={require('../assets/icons/restaurantsSelected.png')} title={'6 people'} />
                     <DetailBarItem icon={require('../assets/icons/clock.png')} title={'45 minutes'} />

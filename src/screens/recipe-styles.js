@@ -1,4 +1,4 @@
-import { StyleSheet } from 'react-native';
+import { StyleSheet, Platform } from 'react-native';
 import { palette } from '../theme';
 
 const styles = StyleSheet.create({
@@ -9,6 +9,12 @@ const styles = StyleSheet.create({
     details: {
         padding: 16,
         flex: 1
+    },
+    header: { 
+        top: Platform.OS === 'ios' ? 30 : 0, 
+        zIndex: 1, 
+        position: 'absolute', 
+        width: '100%' 
     }
 });
 

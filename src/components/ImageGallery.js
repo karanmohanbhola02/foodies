@@ -5,7 +5,7 @@ import { palette } from '../theme';
 
 import styles from './imageGallery-styles';
 
-const ImageGallery = () => {
+const ImageGallery = ({ }) => {
     return (
         <View style={styles.container}>
             <Swiper
@@ -13,17 +13,17 @@ const ImageGallery = () => {
                 paginationStyle={styles.pagination}
                 activeDotColor={palette.white}
                 dotColor={palette.offWhite}>
-                <ImageBackground source={require('../assets/images/sample.jpg')} style={{ width: '100%', height: '100%' }}>
-                    <Text>Beautiful</Text>
+                <ImageBackground source={require('../assets/images/sample.jpg')} style={styles.imageBackground}>
+                    <Text style={styles.text}>Belgian Waffles</Text>
                 </ImageBackground>
-                <ImageBackground source={require('../assets/images/sample.jpg')} style={{ width: '100%', height: '100%' }}>
-                    <Text>Beautiful</Text>
+                <ImageBackground source={require('../assets/images/sample.jpg')} style={styles.imageBackground}>
+                    <Text style={styles.text}>Belgian Waffles</Text>
                 </ImageBackground>
-                <ImageBackground source={require('../assets/images/sample.jpg')} style={{ width: '100%', height: '100%' }}>
-                    <Text>Beautiful</Text>
+                <ImageBackground source={require('../assets/images/sample.jpg')} style={styles.imageBackground}>
+                    <Text style={styles.text}>Belgian Waffles</Text>
                 </ImageBackground>
-                <ImageBackground source={require('../assets/images/sample.jpg')} style={{ width: '100%', height: '100%' }}>
-                    <Text>Beautiful</Text>
+                <ImageBackground source={require('../assets/images/sample.jpg')} style={styles.imageBackground}>
+                    <Text style={styles.text}>Belgian Waffles</Text>
                 </ImageBackground>
             </Swiper>
         </View>
