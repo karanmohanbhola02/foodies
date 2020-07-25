@@ -1,4 +1,5 @@
 const screenNames = {
+    APP: 'app',
     RECIPES: 'recipes',
     RESTAURANTS: 'restaurants'
 };
