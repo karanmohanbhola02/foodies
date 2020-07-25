@@ -12,7 +12,7 @@ const styles = StyleSheet.create({
     },
     headerImage: { 
         width: 20, 
-        height: 20
+        height: 14
     },
     separator: {
         height: 1,

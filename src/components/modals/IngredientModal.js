@@ -15,7 +15,7 @@ const IngredientModal = ({ isModalOpen, onRequestClose }) => {
             <View style={{ flex: 1 }}>
                 <View style={styles.header}>
                     <TouchableOpacity onPress={onRequestClose} hitSlop={{ top: 20, left: 20, bottom: 20, right: 20 }}>
-                        <FastImage source={require('../../assets/icons/recipesSelected.png')} style={styles.headerImage} />
+                        <FastImage source={require('../../assets/icons/dropdown.png')} style={styles.headerImage} />
                     </TouchableOpacity>
                     <Text style={styles.headerText}>Ingredients</Text>
                     <View style={styles.emptyView} />
