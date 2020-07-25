@@ -18,7 +18,8 @@ const RecipesNavigator = () => {
                 headerStyle: {
                     backgroundColor: palette.darkLimeGreen,
                     borderBottomWidth: 0,
-                    shadowOpacity: 0
+                    shadowOpacity: 0,
+                    elevation: 0
                 }
               }}>
             <Stack.Screen

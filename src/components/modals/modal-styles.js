@@ -12,7 +12,8 @@ const styles = StyleSheet.create({
         backgroundColor: palette.white,
         width: '100%',
         height: '70%',
-        borderRadius: 10,
+        borderTopLeftRadius: 10,
+        borderTopRightRadius: 10,
     }
 });
 
