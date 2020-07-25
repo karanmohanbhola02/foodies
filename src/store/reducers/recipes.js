@@ -1,7 +1,7 @@
 import actions from '../constants';
 
 const initialState = {
-    recipes: [],
+    recipes: [1,2,3],
 };
 
 const recipes = (state = initialState, action) => {

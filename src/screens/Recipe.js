@@ -23,7 +23,6 @@ class Recipes extends React.PureComponent {
         console.log(recipes)
         return (
             <View style={styles.container}>
-                <Header title={'Recipes'} />
                 <FlatList
                     showsVerticalScrollIndicator={false}
                     style={styles.listContainer}

@@ -2,18 +2,19 @@ import React from 'react';
 import { View, FlatList } from 'react-native';
 import { connect } from 'react-redux';
 import Header from '../components/shared/Header';
-import RecipeCard from '../components/cards/RecipeCard';
+import RecipeCategoryCard from '../components/cards/RecipeCategoryCard';
 import { screenNames } from '../constants';
 
 import styles from './recipes-styles';
-class Recipes extends React.PureComponent {
+
+class RecipeCategory extends React.PureComponent {
 
     renderItem = ({ item }) => {
         return (
-            <RecipeCard 
+            <RecipeCategoryCard 
                 tagline="Start your day right" 
-                onPress={() => this.props.navigation.navigate(screenNames.RECIPE_CATEGORY, { headerTitle: 'Breakfast' })}
                 title="Breakfast" 
+                onPress={() => this.props.navigation.navigate(screenNames.RECIPE)}
                 imageSource={require('../assets/images/sample.jpg')} />
         );
     }
@@ -23,7 +24,6 @@ class Recipes extends React.PureComponent {
         console.log(recipes)
         return (
             <View style={styles.container}>
-                <Header title={'Recipes'} />
                 <FlatList
                     showsVerticalScrollIndicator={false}
                     style={styles.listContainer}
@@ -46,4 +46,4 @@ const mapDispatchToProps = {
 export default connect(
     mapStateToProps,
     mapDispatchToProps
-)(Recipes);
+)(RecipeCategory);
