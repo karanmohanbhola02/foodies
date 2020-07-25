@@ -6,6 +6,7 @@ import Button from '../buttons/Button';
 import IngredientListItem from '../IngredientListItem';
 
 import styles from './ingredientModal-styles';
+import ModalHeader from './ModalHeader';
 
 const IngredientModal = ({ isModalOpen, onRequestClose }) => {
     return (
@@ -13,13 +14,7 @@ const IngredientModal = ({ isModalOpen, onRequestClose }) => {
             isModalOpen={isModalOpen}
             onRequestClose={onRequestClose}>
             <View style={{ flex: 1 }}>
-                <View style={styles.header}>
-                    <TouchableOpacity onPress={onRequestClose} hitSlop={{ top: 20, left: 20, bottom: 20, right: 20 }}>
-                        <FastImage source={require('../../assets/icons/dropdown.png')} style={styles.headerImage} />
-                    </TouchableOpacity>
-                    <Text style={styles.headerText}>Ingredients</Text>
-                    <View style={styles.emptyView} />
-                </View>
+                <ModalHeader title={'Ingredients'} onPress={onRequestClose} />
                 <FlatList
                     style={styles.listContainer}
                     showsVerticalScrollIndicator={false}
