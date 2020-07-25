@@ -1,35 +1,37 @@
 import React from 'react';
-import { View, FlatList } from 'react-native';
+import { View } from 'react-native';
 import { connect } from 'react-redux';
-import Header from '../components/shared/Header';
-import RecipeCard from '../components/cards/RecipeCard';
-import { screenNames } from '../constants';
+import DetailsBar from '../components/shared/DetailsBar';
+import DetailBarItem from '../components/shared/DetailBarItem';
+import Button from '../components/buttons/Button';
+import InfoList from '../components/InfoList';
+import IngredientModal from '../components/modals/IngredientModal';
 
-import styles from './recipes-styles';
+import styles from './recipe-styles';
 class Recipes extends React.PureComponent {
 
-    renderItem = ({ item }) => {
-        return (
-            <RecipeCard 
-                tagline="Start your day right" 
-                onPress={() => this.props.navigation.navigate(screenNames.RECIPE_CATEGORY, { headerTitle: 'Breakfast' })}
-                title="Breakfast" 
-                imageSource={require('../assets/images/sample.jpg')} />
-        );
+    state = {
+        isModalOpen: false
+    };
+
+    handleModal = () => {
+        this.setState({
+            isModalOpen: !this.state.isModalOpen
+        })
     }
-    
+
     render() {
-        const { recipes } = this.props;
-        console.log(recipes)
-        return (
+        return (            
             <View style={styles.container}>
-                <FlatList
-                    showsVerticalScrollIndicator={false}
-                    style={styles.listContainer}
-                    data={recipes}
-                    renderItem={this.renderItem}
-                    keyExtractor={(item, index) => `${index}`}
-                />
+                <DetailsBar>
+                    <DetailBarItem icon={require('../assets/icons/recipesSelected.png')} title={'6 people'} />
+                    <DetailBarItem icon={require('../assets/icons/recipesSelected.png')} title={'45 minutes'} />
+                </DetailsBar>
+                <View style={styles.details}>
+                    <Button title={'See ingredients'} onPress={this.handleModal} />
+                    <InfoList details={[1, 2, 3, 4]} />
+                </View>
+                <IngredientModal isModalOpen={this.state.isModalOpen} onRequestClose={this.handleModal} />
             </View>
         );
     }

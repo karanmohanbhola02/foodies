@@ -1,5 +1,5 @@
 import React from 'react';
-import { TouchableOpacity } from 'react-native';
+import { TouchableOpacity, View } from 'react-native';
 import { createStackNavigator } from '@react-navigation/stack';
 import FastImage from 'react-native-fast-image';
 import Recipes from '../screens/Recipes';
@@ -12,7 +12,15 @@ const Stack = createStackNavigator();
 
 const RecipesNavigator = () => {
     return (
-        <Stack.Navigator initialRouteName={screenNames.RECIPES}>
+        <Stack.Navigator 
+            initialRouteName={screenNames.RECIPES}
+            screenOptions={{
+                headerStyle: {
+                    backgroundColor: palette.darkLimeGreen,
+                    borderBottomWidth: 0,
+                    shadowOpacity: 0
+                }
+              }}>
             <Stack.Screen
                 name={screenNames.RECIPES}
                 component={Recipes}
@@ -27,10 +35,13 @@ const RecipesNavigator = () => {
                             />
                         </TouchableOpacity>
                     ),
-                    headerStyle: {
-                        backgroundColor: palette.darkLimeGreen,
-                        borderBottomWidth: 0,
-                        shadowOpacity: 0
+                    headerLeft: ({onPress, label, labelStyle}) => {
+                        console.log(onPress, label, labelStyle)
+                        return (
+                            <View>
+
+                            </View>
+                        )
                     }
                 }} />
             <Stack.Screen 
@@ -47,11 +58,14 @@ const RecipesNavigator = () => {
                             />
                         </TouchableOpacity>
                     ),
-                    headerStyle: {
-                        backgroundColor: palette.darkLimeGreen,
-                        borderBottomWidth: 0,
-                        shadowOpacity: 0
-                    } 
+                    headerLeft: ({onPress, label, labelStyle}) => {
+                        console.log(onPress, label, labelStyle)
+                        return (
+                            <View>
+
+                            </View>
+                        )
+                    }
                 })}
             />
             <Stack.Screen 
@@ -67,12 +81,7 @@ const RecipesNavigator = () => {
                                 resizeMode={FastImage.resizeMode.contain}
                             />
                         </TouchableOpacity>
-                    ),
-                    headerStyle: {
-                        backgroundColor: palette.darkLimeGreen,
-                        borderBottomWidth: 0,
-                        shadowOpacity: 0
-                    } 
+                    )
                 })}
             />
         </Stack.Navigator>

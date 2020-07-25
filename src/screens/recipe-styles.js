@@ -6,7 +6,7 @@ const styles = StyleSheet.create({
         flex: 1,
         backgroundColor: palette.gray2
     },
-    listContainer: {
+    details: {
         padding: 16,
         flex: 1
     }
