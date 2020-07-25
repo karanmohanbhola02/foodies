@@ -6,15 +6,16 @@ import ModalHeader from './ModalHeader';
 import Button from '../buttons/Button';
 import IngredientListItem from '../IngredientListItem';
 
-import styles from './ingredientModal-styles';
+import styles from './reservationModal-styles';
 
-const IngredientModal = ({ isModalOpen, onRequestClose }) => {
+const ReservationModal = ({ isModalOpen, onRequestClose }) => {
     return (
         <Modal
             isModalOpen={isModalOpen}
+            style={styles.modalStyle}
             onRequestClose={onRequestClose}>
             <View style={{ flex: 1 }}>
-                <ModalHeader title={'Ingredients'} onPress={onRequestClose} />
+                <ModalHeader title={'Reservation'} onPress={onRequestClose} />
                 <FlatList
                     style={styles.listContainer}
                     showsVerticalScrollIndicator={false}
@@ -24,11 +25,11 @@ const IngredientModal = ({ isModalOpen, onRequestClose }) => {
                     keyExtractor={(item, index) => `${index}`}
                 />
                 <SafeAreaView style={styles.buttonContainer}>
-                    <Button title={'Add to Reminders'} />
+                    <Button title={'Pay'} />
                 </SafeAreaView>
             </View>
         </Modal>
     )
 };
 
-export default IngredientModal;
+export default ReservationModal;

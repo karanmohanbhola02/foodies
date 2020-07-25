@@ -3,7 +3,7 @@ import { View, Modal as NativeModal } from 'react-native';
 
 import styles from './modal-styles';
 
-const Modal = ({ isModalOpen, onRequestClose, children }) => {
+const Modal = ({ isModalOpen, onRequestClose, children, style }) => {
     return (
         <NativeModal
             visible={isModalOpen}
@@ -13,7 +13,7 @@ const Modal = ({ isModalOpen, onRequestClose, children }) => {
             statusBarTranslucent={false}
             transparent={true}>
             <View  style={styles.overlay}>
-                <View style={styles.container}>
+                <View style={[styles.container, style]}>
                     {children}
                 </View>
             </View>

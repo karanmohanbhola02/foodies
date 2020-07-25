@@ -7,7 +7,7 @@ import DetailBarItem from '../components/shared/DetailBarItem';
 import Button from '../components/buttons/Button';
 import Header from '../components/shared/Header';
 import RatingAndReview from '../components/RatingAndReview';
-import IngredientModal from '../components/modals/IngredientModal';
+import ReservationModal from '../components/modals/ReservationModal';
 import ImageGallery from '../components/ImageGallery';
 
 import styles from './restaurantDetails-styles';
@@ -50,7 +50,7 @@ class RestaurantDetails extends React.PureComponent {
                         
                     </View>
                 </ScrollView>
-                <IngredientModal isModalOpen={this.state.isModalOpen} onRequestClose={this.handleModal} />
+                <ReservationModal isModalOpen={this.state.isModalOpen} onRequestClose={this.handleModal} />
             </View>
         );
     }
