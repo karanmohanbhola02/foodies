@@ -22,6 +22,9 @@ const ImageGallery = () => {
                 <ImageBackground source={require('../assets/images/sample.jpg')} style={{ width: '100%', height: '100%' }}>
                     <Text>Beautiful</Text>
                 </ImageBackground>
+                <ImageBackground source={require('../assets/images/sample.jpg')} style={{ width: '100%', height: '100%' }}>
+                    <Text>Beautiful</Text>
+                </ImageBackground>
             </Swiper>
         </View>
     );

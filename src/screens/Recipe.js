@@ -26,8 +26,8 @@ class Recipes extends React.PureComponent {
             <View style={styles.container}>
                 <ImageGallery />
                 <DetailsBar>
-                    <DetailBarItem icon={require('../assets/icons/recipesSelected.png')} title={'6 people'} />
-                    <DetailBarItem icon={require('../assets/icons/recipesSelected.png')} title={'45 minutes'} />
+                    <DetailBarItem icon={require('../assets/icons/restaurantsSelected.png')} title={'6 people'} />
+                    <DetailBarItem icon={require('../assets/icons/clock.png')} title={'45 minutes'} />
                 </DetailsBar>
                 <View style={styles.details}>
                     <Button title={'See ingredients'} onPress={this.handleModal} />
