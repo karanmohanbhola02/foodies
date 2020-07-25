@@ -1,19 +1,19 @@
 import actions from '../constants';
 
 const initialState = {
-    recipes: [1, 2, 3],
+    restaurants: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
 };
 
-const recipes = (state = initialState, action) => {
+const restaurants = (state = initialState, action) => {
     switch (action.type) {
         case actions.GET_RECIPES:
             return {
                 ...state,
-                recipes: action.payload
+                restaurants: action.payload
             };
         default:
             return state;
     }
 };
 
-export default recipes;
+export default restaurants;

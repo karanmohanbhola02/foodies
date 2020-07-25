@@ -5,6 +5,7 @@ const palette = {
     darkLimeGreen: '#73c700',
     gray: '#999999',
     gray2: '#f3f3f3',
+    gray3: '#8c8c8c',
     offWhite: 'rgba(255, 255, 255, 0.5)'
 };
 
