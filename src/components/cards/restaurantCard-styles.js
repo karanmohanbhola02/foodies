@@ -41,6 +41,19 @@ const styles = StyleSheet.create({
         lineHeight: 22,
         letterSpacing: -0.41,
         color: palette.black
+    },
+    imageContainer: { 
+        width: 110, 
+        height: '100%', 
+        borderRadius: 8, 
+        overflow: 'hidden'
+    },
+    image: { 
+        width: '100%', 
+        height: '100%'
+    },
+    desc: { 
+        marginBottom: 15 
     }
 });
 
