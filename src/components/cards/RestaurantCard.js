@@ -1,6 +1,6 @@
 import React from 'react';
-import { TouchableOpacity, View, ImageBackground, Text } from 'react-native';
-import FastImage from 'react-native-fast-image';
+import { TouchableOpacity, View, Text } from 'react-native';
+import ImageTile from '../shared/ImageTile';
 import RatingAndReview from '../RatingAndReview';
 
 import styles from './restaurantCard-styles';
@@ -16,9 +16,7 @@ const RestaurantCard = ({ subTitle, title, imageSource, onPress }) => {
                     </View>
                     <RatingAndReview />
                 </View>
-                <View style={styles.imageContainer}>
-                    <FastImage source={require('../../assets/images/sample.jpg')} style={styles.image} />
-                </View>
+                <ImageTile />
             </View>
         </TouchableOpacity>
     )

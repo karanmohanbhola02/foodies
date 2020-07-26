@@ -1,6 +1,7 @@
 import React from 'react';
 import { View } from 'react-native';
 import { connect } from 'react-redux';
+import { SafeAreaView } from 'react-native-safe-area-context';
 import DetailsBar from '../components/shared/DetailsBar';
 import DetailBarItem from '../components/shared/DetailBarItem';
 import Button from '../components/buttons/Button';
@@ -26,13 +27,13 @@ class Recipes extends React.PureComponent {
     render() {
         return (
             <View style={styles.container}>
-                <View style={styles.header}>
+                <SafeAreaView style={styles.header}>
                     <Header 
                         prevTitle={'Recipes'} 
                         isBackgroundTransparent
                         rightIconSource={require('../assets/icons/bookmark.png')}
                         navigation={this.props.navigation} />
-                </View>
+                </SafeAreaView>
                 <ImageGallery navigation={this.props.navigation} />
                 <DetailsBar>
                     <DetailBarItem icon={require('../assets/icons/restaurantsSelected.png')} title={'6 people'} />
