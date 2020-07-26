@@ -19,7 +19,7 @@ const ReservationModal = ({ isModalOpen, onRequestClose }) => {
             onRequestClose={onRequestClose}>
             <View style={{ flex: 1 }}>
                 <ModalHeader title={'Reservation'} onPress={onRequestClose} />
-                <ScrollView style={{ flex: 1 }}>
+                <ScrollView style={{ flex: 1 }} showsVerticalScrollIndicator={false}>
                     <RestaurantInfo />
                     <View style={styles.separator} />
                     <View style={{ paddingHorizontal: 16, marginTop: 16  }}>
