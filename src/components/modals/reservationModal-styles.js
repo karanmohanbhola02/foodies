@@ -9,7 +9,8 @@ const styles = StyleSheet.create({
     buttonContainer: {
         padding: 16, 
         borderTopWidth: 1,
-        borderTopColor: palette.gray2
+        borderTopColor: palette.gray2,
+        backgroundColor: palette.white
     },
     listContainer: {
         flex: 1

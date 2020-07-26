@@ -3,6 +3,7 @@ const palette = {
     white: '#ffffff',
     white70: 'rgba(255, 255, 255, 0.7)',
     darkLimeGreen: '#73c700',
+    lightLimeGreen: '#f1f9e7',
     gray: '#999999',
     gray2: '#f3f3f3',
     gray3: '#8c8c8c',

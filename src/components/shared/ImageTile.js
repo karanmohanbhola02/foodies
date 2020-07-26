@@ -4,9 +4,9 @@ import FastImage from 'react-native-fast-image';
 
 import styles from './imageTile-styles';
 
-const ImageTile = ({}) => {
+const ImageTile = ({ style }) => {
     return (
-        <View style={styles.imageContainer}>
+        <View style={[styles.imageContainer, style]}>
             <FastImage source={require('../../assets/images/sample.jpg')} style={styles.image} />
         </View>
     );
