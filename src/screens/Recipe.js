@@ -36,8 +36,7 @@ class Recipes extends React.PureComponent {
                         rightIconSource={require('../assets/icons/bookmark.png')}
                         navigation={this.props.navigation} />
                 </SafeAreaView>
-                <ImageGallery 
-                    navigation={this.props.navigation}
+                <ImageGallery
                     title={recipeCategory.name}
                     thumbnails={recipeCategory.thumbnails} />
                 <DetailsBar>

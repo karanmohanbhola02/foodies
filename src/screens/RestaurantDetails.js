@@ -26,43 +26,48 @@ class RestaurantDetails extends React.PureComponent {
     }
 
     render() {
+        const { restaurant } = this.props;
         return (
             <View style={styles.container}>
                 <View style={styles.header}>
                     <Header 
-                        prevTitle={'Recipes'} 
+                        prevTitle={'Restaurants'} 
                         isBackgroundTransparent
+                        rightIconPress={() => alert('bookmark')}
                         rightIconSource={require('../assets/icons/bookmark.png')}
                         navigation={this.props.navigation} />
                 </View>
-                <ImageGallery 
-                    navigation={this.props.navigation}
-                    title=''
-                    thumbnails={[]} />
+                <ImageGallery
+                    title={restaurant.restaurantName}
+                    thumbnails={restaurant.thumbnails} />
                 <DetailsBar>
                     <DetailBarItem icon={require('../assets/icons/cash.png')} title={'€€'} />
                     <RatingAndReview 
                         style={styles.ratingContainer} 
                         ratingStyle={styles.ratingStyle}
+                        rating={restaurant.rating}
+                        reviewsCount={restaurant.reviewsCount}
                         reviewText={styles.reviewText} />
-                    <DetailBarItem icon={require('../assets/icons/clock.png')} title={'18:00 · 22:00'} />
+                    <DetailBarItem icon={require('../assets/icons/clock.png')} title={restaurant.timings} />
                 </DetailsBar>
                 <ScrollView showsVerticalScrollIndicator={false}>
                     <FastImage source={require('../assets/images/map2.png')} style={{ height: 180 }} resizeMode="contain" />
                     <View style={styles.details}>
                         <Button title={'Make reservation'} onPress={this.handleModal} />
-                        <RestaurantReviewCard />
-                        <RestaurantReviewCard />
+                        {restaurant.reviews.map((review, index) => <RestaurantReviewCard key={index} review={review} />)}
                     </View>
                 </ScrollView>
-                <ReservationModal isModalOpen={this.state.isModalOpen} onRequestClose={this.handleModal} />
+                <ReservationModal 
+                    isModalOpen={this.state.isModalOpen} 
+                    onRequestClose={this.handleModal}
+                    restaurant={restaurant} />
             </View>
         );
     }
 }
 
-const mapStateToProps = (state) => ({
-    recipes: state.recipes.recipes
+const mapStateToProps = (state, ownProps) => ({
+    restaurant: state.restaurants.restaurants[ownProps.route.params.index]
 });
 
 const mapDispatchToProps = {

@@ -11,7 +11,7 @@ import DaySelection from '../shared/DaySelection';
 
 import styles from './reservationModal-styles';
 
-const ReservationModal = ({ isModalOpen, onRequestClose }) => {
+const ReservationModal = ({ isModalOpen, onRequestClose, restaurant }) => {
     return (
         <Modal
             isModalOpen={isModalOpen}
@@ -20,7 +20,10 @@ const ReservationModal = ({ isModalOpen, onRequestClose }) => {
             <View style={{ flex: 1 }}>
                 <ModalHeader title={'Reservation'} onPress={onRequestClose} />
                 <ScrollView style={{ flex: 1 }} showsVerticalScrollIndicator={false}>
-                    <RestaurantInfo />
+                    <RestaurantInfo 
+                        restaurantName={restaurant.restaurantName} 
+                        restaurantAddress={restaurant.address}
+                        imageSource={{ uri: restaurant.thumbnails[0] }} />
                     <View style={styles.separator} />
                     <View style={{ paddingHorizontal: 16, marginTop: 16  }}>
                         <DaySelection />

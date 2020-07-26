@@ -11,13 +11,15 @@ import styles from './restaurants-styles';
 
 class Restaurants extends React.PureComponent {
 
-    renderItem = ({ item }) => {
+    renderItem = ({ item, index }) => {
         return (
             <RestaurantCard
-                tagline="Start your day right"
-                onPress={() => this.props.navigation.navigate(screenNames.RESTAURANT_DETAILS, { headerTitle: 'Breakfast' })}
-                title="Breakfast"
-                imageSource={require('../assets/images/sample.jpg')} />
+                subTitle={item.cuisineType}
+                rating={item.rating}
+                reviewsCount={item.reviewsCount}
+                onPress={() => this.props.navigation.navigate(screenNames.RESTAURANT_DETAILS, { index })}
+                title={item.restaurantName}
+                imageSource={{ uri: item.thumbnails[0] }} />
         );
     }
 

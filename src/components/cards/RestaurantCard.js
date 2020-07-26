@@ -5,18 +5,20 @@ import RatingAndReview from '../RatingAndReview';
 
 import styles from './restaurantCard-styles';
 
-const RestaurantCard = ({ subTitle, title, imageSource, onPress }) => {
+const RestaurantCard = ({ subTitle, title, imageSource, onPress, rating, reviewsCount }) => {
     return (
         <TouchableOpacity onPress={onPress}>
             <View style={styles.container}>
                 <View>
                     <View style={styles.desc}>
                         <Text style={styles.title}>{title}</Text>
-                        <Text style={styles.subTitle}>{title}</Text>
+                        <Text style={styles.subTitle}>{subTitle}</Text>
                     </View>
-                    <RatingAndReview />
+                    <RatingAndReview
+                        rating={rating}
+                        reviewsCount={reviewsCount} />
                 </View>
-                <ImageTile />
+                <ImageTile imageSource={imageSource} />
             </View>
         </TouchableOpacity>
     )

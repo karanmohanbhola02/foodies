@@ -30,6 +30,7 @@ const DaySelection = ({ count, title, handleChange }) => {
                 onConfirm={onChange}
                 onCancel={() => setShow(false)}
                 value={date}
+                minimumDate={date}
                 display="calendar"
             />
         </View>
