@@ -11,8 +11,8 @@ const DaySelection = ({ count, title, handleChange }) => {
 
     const onChange = (selectedDate) => {
         const currentDate = selectedDate;
-        setDate(currentDate);
         setShow(false);
+        setDate(currentDate);
     };
 
     return (

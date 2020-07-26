@@ -7,19 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		00E356F31AD99517003FC87E /* food_appTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* food_appTests.m */; };
-		05FF493FFFA6E5DC57B89F99 /* libPods-food_app.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 148E8338FD90AAF9A72C83B9 /* libPods-food_app.a */; };
+		00E356F31AD99517003FC87E /* foodiesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* foodiesTests.m */; };
+		05FF493FFFA6E5DC57B89F99 /* libPods-foodies.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 148E8338FD90AAF9A72C83B9 /* libPods-foodies.a */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		2D02E4BC1E0B4A80006451C7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		2D02E4BD1E0B4A84006451C7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
-		2DCD954D1E0B4F2C00145EB5 /* food_appTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* food_appTests.m */; };
-		2DEE95B458A0842A5CD63693 /* libPods-food_app-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 94A79FF94E54624167179F02 /* libPods-food_app-tvOSTests.a */; };
-		3DD16C385ED92CD837D2A97E /* libPods-food_app-food_appTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B6E57B39022EDBA87042C21 /* libPods-food_app-food_appTests.a */; };
+		2DCD954D1E0B4F2C00145EB5 /* foodiesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* foodiesTests.m */; };
+		2DEE95B458A0842A5CD63693 /* libPods-foodies-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 94A79FF94E54624167179F02 /* libPods-foodies-tvOSTests.a */; };
+		3DD16C385ED92CD837D2A97E /* libPods-foodies-foodiesTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B6E57B39022EDBA87042C21 /* libPods-foodies-foodiesTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
-		D03C4E4064B13174656FFB2B /* libPods-food_app-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FCDEA8E59C8375125091501B /* libPods-food_app-tvOS.a */; };
+		D03C4E4064B13174656FFB2B /* libPods-foodies-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FCDEA8E59C8375125091501B /* libPods-foodies-tvOS.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,45 +28,45 @@
 			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 13B07F861A680F5B00A75B9A;
-			remoteInfo = food_app;
+			remoteInfo = foodies;
 		};
 		2D02E4911E0B4A5D006451C7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 2D02E47A1E0B4A5D006451C7;
-			remoteInfo = "food_app-tvOS";
+			remoteInfo = "foodies-tvOS";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		008F07F21AC5B25A0029DE68 /* main.jsbundle */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = main.jsbundle; sourceTree = "<group>"; };
-		00E356EE1AD99517003FC87E /* food_appTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = food_appTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		00E356EE1AD99517003FC87E /* foodiesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = foodiesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		00E356F21AD99517003FC87E /* food_appTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = food_appTests.m; sourceTree = "<group>"; };
-		026FA84AB9978D91D8903099 /* Pods-food_app-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-food_app-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-food_app-tvOSTests/Pods-food_app-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
-		06BD2A2D89EBE4B95DE8EEEC /* Pods-food_app-food_appTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-food_app-food_appTests.debug.xcconfig"; path = "Target Support Files/Pods-food_app-food_appTests/Pods-food_app-food_appTests.debug.xcconfig"; sourceTree = "<group>"; };
-		13B07F961A680F5B00A75B9A /* food_app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = food_app.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = food_app/AppDelegate.h; sourceTree = "<group>"; };
-		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = food_app/AppDelegate.m; sourceTree = "<group>"; };
-		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = food_app/Images.xcassets; sourceTree = "<group>"; };
-		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = food_app/Info.plist; sourceTree = "<group>"; };
-		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = food_app/main.m; sourceTree = "<group>"; };
-		148E8338FD90AAF9A72C83B9 /* libPods-food_app.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-food_app.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		1E2849C0DF86AD553C94D73F /* Pods-food_app.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-food_app.release.xcconfig"; path = "Target Support Files/Pods-food_app/Pods-food_app.release.xcconfig"; sourceTree = "<group>"; };
-		2D02E47B1E0B4A5D006451C7 /* food_app-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "food_app-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		2D02E4901E0B4A5D006451C7 /* food_app-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "food_app-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		6B6E57B39022EDBA87042C21 /* libPods-food_app-food_appTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-food_app-food_appTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = food_app/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		8CB5181E10A92EDE777A0D00 /* Pods-food_app-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-food_app-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-food_app-tvOS/Pods-food_app-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
-		94A79FF94E54624167179F02 /* libPods-food_app-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-food_app-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		C9665AC7A66057286B595458 /* Pods-food_app.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-food_app.debug.xcconfig"; path = "Target Support Files/Pods-food_app/Pods-food_app.debug.xcconfig"; sourceTree = "<group>"; };
-		ED175312CEF634A46285D9DA /* Pods-food_app-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-food_app-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-food_app-tvOSTests/Pods-food_app-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
+		00E356F21AD99517003FC87E /* foodiesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = foodiesTests.m; sourceTree = "<group>"; };
+		026FA84AB9978D91D8903099 /* Pods-foodies-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-foodies-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-foodies-tvOSTests/Pods-foodies-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		06BD2A2D89EBE4B95DE8EEEC /* Pods-foodies-foodiesTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-foodies-foodiesTests.debug.xcconfig"; path = "Target Support Files/Pods-foodies-foodiesTests/Pods-foodies-foodiesTests.debug.xcconfig"; sourceTree = "<group>"; };
+		13B07F961A680F5B00A75B9A /* foodies.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = foodies.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = foodies/AppDelegate.h; sourceTree = "<group>"; };
+		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = foodies/AppDelegate.m; sourceTree = "<group>"; };
+		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = foodies/Images.xcassets; sourceTree = "<group>"; };
+		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = foodies/Info.plist; sourceTree = "<group>"; };
+		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = foodies/main.m; sourceTree = "<group>"; };
+		148E8338FD90AAF9A72C83B9 /* libPods-foodies.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-foodies.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1E2849C0DF86AD553C94D73F /* Pods-foodies.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-foodies.release.xcconfig"; path = "Target Support Files/Pods-foodies/Pods-foodies.release.xcconfig"; sourceTree = "<group>"; };
+		2D02E47B1E0B4A5D006451C7 /* foodies-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "foodies-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D02E4901E0B4A5D006451C7 /* foodies-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "foodies-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B6E57B39022EDBA87042C21 /* libPods-foodies-foodiesTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-foodies-foodiesTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = foodies/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8CB5181E10A92EDE777A0D00 /* Pods-foodies-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-foodies-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-foodies-tvOS/Pods-foodies-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
+		94A79FF94E54624167179F02 /* libPods-foodies-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-foodies-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C9665AC7A66057286B595458 /* Pods-foodies.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-foodies.debug.xcconfig"; path = "Target Support Files/Pods-foodies/Pods-foodies.debug.xcconfig"; sourceTree = "<group>"; };
+		ED175312CEF634A46285D9DA /* Pods-foodies-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-foodies-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-foodies-tvOSTests/Pods-foodies-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
-		F6343216A7145D5AFE8D0445 /* Pods-food_app-food_appTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-food_app-food_appTests.release.xcconfig"; path = "Target Support Files/Pods-food_app-food_appTests/Pods-food_app-food_appTests.release.xcconfig"; sourceTree = "<group>"; };
-		FCDEA8E59C8375125091501B /* libPods-food_app-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-food_app-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		FF81FDCA951E45D37CA24906 /* Pods-food_app-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-food_app-tvOS.release.xcconfig"; path = "Target Support Files/Pods-food_app-tvOS/Pods-food_app-tvOS.release.xcconfig"; sourceTree = "<group>"; };
+		F6343216A7145D5AFE8D0445 /* Pods-foodies-foodiesTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-foodies-foodiesTests.release.xcconfig"; path = "Target Support Files/Pods-foodies-foodiesTests/Pods-foodies-foodiesTests.release.xcconfig"; sourceTree = "<group>"; };
+		FCDEA8E59C8375125091501B /* libPods-foodies-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-foodies-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF81FDCA951E45D37CA24906 /* Pods-foodies-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-foodies-tvOS.release.xcconfig"; path = "Target Support Files/Pods-foodies-tvOS/Pods-foodies-tvOS.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,7 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3DD16C385ED92CD837D2A97E /* libPods-food_app-food_appTests.a in Frameworks */,
+				3DD16C385ED92CD837D2A97E /* libPods-foodies-foodiesTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,7 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				05FF493FFFA6E5DC57B89F99 /* libPods-food_app.a in Frameworks */,
+				05FF493FFFA6E5DC57B89F99 /* libPods-foodies.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,7 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D03C4E4064B13174656FFB2B /* libPods-food_app-tvOS.a in Frameworks */,
+				D03C4E4064B13174656FFB2B /* libPods-foodies-tvOS.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,20 +98,20 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2DEE95B458A0842A5CD63693 /* libPods-food_app-tvOSTests.a in Frameworks */,
+				2DEE95B458A0842A5CD63693 /* libPods-foodies-tvOSTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		00E356EF1AD99517003FC87E /* food_appTests */ = {
+		00E356EF1AD99517003FC87E /* foodiesTests */ = {
 			isa = PBXGroup;
 			children = (
-				00E356F21AD99517003FC87E /* food_appTests.m */,
+				00E356F21AD99517003FC87E /* foodiesTests.m */,
 				00E356F01AD99517003FC87E /* Supporting Files */,
 			);
-			path = food_appTests;
+			path = foodiesTests;
 			sourceTree = "<group>";
 		};
 		00E356F01AD99517003FC87E /* Supporting Files */ = {
@@ -122,7 +122,7 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		13B07FAE1A68108700A75B9A /* food_app */ = {
+		13B07FAE1A68108700A75B9A /* foodies */ = {
 			isa = PBXGroup;
 			children = (
 				008F07F21AC5B25A0029DE68 /* main.jsbundle */,
@@ -133,7 +133,7 @@
 				81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */,
 				13B07FB71A68108700A75B9A /* main.m */,
 			);
-			name = food_app;
+			name = foodies;
 			sourceTree = "<group>";
 		};
 		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
@@ -141,10 +141,10 @@
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
 				ED2971642150620600B7C4FE /* JavaScriptCore.framework */,
-				148E8338FD90AAF9A72C83B9 /* libPods-food_app.a */,
-				6B6E57B39022EDBA87042C21 /* libPods-food_app-food_appTests.a */,
-				FCDEA8E59C8375125091501B /* libPods-food_app-tvOS.a */,
-				94A79FF94E54624167179F02 /* libPods-food_app-tvOSTests.a */,
+				148E8338FD90AAF9A72C83B9 /* libPods-foodies.a */,
+				6B6E57B39022EDBA87042C21 /* libPods-foodies-foodiesTests.a */,
+				FCDEA8E59C8375125091501B /* libPods-foodies-tvOS.a */,
+				94A79FF94E54624167179F02 /* libPods-foodies-tvOSTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -152,14 +152,14 @@
 		537E0CB6B0DBEFA9DC7B5D12 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				C9665AC7A66057286B595458 /* Pods-food_app.debug.xcconfig */,
-				1E2849C0DF86AD553C94D73F /* Pods-food_app.release.xcconfig */,
-				06BD2A2D89EBE4B95DE8EEEC /* Pods-food_app-food_appTests.debug.xcconfig */,
-				F6343216A7145D5AFE8D0445 /* Pods-food_app-food_appTests.release.xcconfig */,
-				8CB5181E10A92EDE777A0D00 /* Pods-food_app-tvOS.debug.xcconfig */,
-				FF81FDCA951E45D37CA24906 /* Pods-food_app-tvOS.release.xcconfig */,
-				026FA84AB9978D91D8903099 /* Pods-food_app-tvOSTests.debug.xcconfig */,
-				ED175312CEF634A46285D9DA /* Pods-food_app-tvOSTests.release.xcconfig */,
+				C9665AC7A66057286B595458 /* Pods-foodies.debug.xcconfig */,
+				1E2849C0DF86AD553C94D73F /* Pods-foodies.release.xcconfig */,
+				06BD2A2D89EBE4B95DE8EEEC /* Pods-foodies-foodiesTests.debug.xcconfig */,
+				F6343216A7145D5AFE8D0445 /* Pods-foodies-foodiesTests.release.xcconfig */,
+				8CB5181E10A92EDE777A0D00 /* Pods-foodies-tvOS.debug.xcconfig */,
+				FF81FDCA951E45D37CA24906 /* Pods-foodies-tvOS.release.xcconfig */,
+				026FA84AB9978D91D8903099 /* Pods-foodies-tvOSTests.debug.xcconfig */,
+				ED175312CEF634A46285D9DA /* Pods-foodies-tvOSTests.release.xcconfig */,
 			);
 			name = Pods;
 			path = Pods;
@@ -175,9 +175,9 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
-				13B07FAE1A68108700A75B9A /* food_app */,
+				13B07FAE1A68108700A75B9A /* foodies */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
-				00E356EF1AD99517003FC87E /* food_appTests */,
+				00E356EF1AD99517003FC87E /* foodiesTests */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				537E0CB6B0DBEFA9DC7B5D12 /* Pods */,
@@ -190,10 +190,10 @@
 		83CBBA001A601CBA00E9B192 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				13B07F961A680F5B00A75B9A /* food_app.app */,
-				00E356EE1AD99517003FC87E /* food_appTests.xctest */,
-				2D02E47B1E0B4A5D006451C7 /* food_app-tvOS.app */,
-				2D02E4901E0B4A5D006451C7 /* food_app-tvOSTests.xctest */,
+				13B07F961A680F5B00A75B9A /* foodies.app */,
+				00E356EE1AD99517003FC87E /* foodiesTests.xctest */,
+				2D02E47B1E0B4A5D006451C7 /* foodies-tvOS.app */,
+				2D02E4901E0B4A5D006451C7 /* foodies-tvOSTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -201,9 +201,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		00E356ED1AD99517003FC87E /* food_appTests */ = {
+		00E356ED1AD99517003FC87E /* foodiesTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "food_appTests" */;
+			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "foodiesTests" */;
 			buildPhases = (
 				B072BA88DFBB1790DE0D2208 /* [CP] Check Pods Manifest.lock */,
 				00E356EA1AD99517003FC87E /* Sources */,
@@ -216,14 +216,14 @@
 			dependencies = (
 				00E356F51AD99517003FC87E /* PBXTargetDependency */,
 			);
-			name = food_appTests;
-			productName = food_appTests;
-			productReference = 00E356EE1AD99517003FC87E /* food_appTests.xctest */;
+			name = foodiesTests;
+			productName = foodiesTests;
+			productReference = 00E356EE1AD99517003FC87E /* foodiesTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		13B07F861A680F5B00A75B9A /* food_app */ = {
+		13B07F861A680F5B00A75B9A /* foodies */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "food_app" */;
+			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "foodies" */;
 			buildPhases = (
 				46D97B8ABF45EC05A669D97C /* [CP] Check Pods Manifest.lock */,
 				FD10A7F022414F080027D42C /* Start Packager */,
@@ -237,14 +237,14 @@
 			);
 			dependencies = (
 			);
-			name = food_app;
-			productName = food_app;
-			productReference = 13B07F961A680F5B00A75B9A /* food_app.app */;
+			name = foodies;
+			productName = foodies;
+			productReference = 13B07F961A680F5B00A75B9A /* foodies.app */;
 			productType = "com.apple.product-type.application";
 		};
-		2D02E47A1E0B4A5D006451C7 /* food_app-tvOS */ = {
+		2D02E47A1E0B4A5D006451C7 /* foodies-tvOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2D02E4BA1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "food_app-tvOS" */;
+			buildConfigurationList = 2D02E4BA1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "foodies-tvOS" */;
 			buildPhases = (
 				A6632306A032158C4CEA78E0 /* [CP] Check Pods Manifest.lock */,
 				FD10A7F122414F3F0027D42C /* Start Packager */,
@@ -257,14 +257,14 @@
 			);
 			dependencies = (
 			);
-			name = "food_app-tvOS";
-			productName = "food_app-tvOS";
-			productReference = 2D02E47B1E0B4A5D006451C7 /* food_app-tvOS.app */;
+			name = "foodies-tvOS";
+			productName = "foodies-tvOS";
+			productReference = 2D02E47B1E0B4A5D006451C7 /* foodies-tvOS.app */;
 			productType = "com.apple.product-type.application";
 		};
-		2D02E48F1E0B4A5D006451C7 /* food_app-tvOSTests */ = {
+		2D02E48F1E0B4A5D006451C7 /* foodies-tvOSTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "food_app-tvOSTests" */;
+			buildConfigurationList = 2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "foodies-tvOSTests" */;
 			buildPhases = (
 				BCE233F705D627EB61029862 /* [CP] Check Pods Manifest.lock */,
 				2D02E48C1E0B4A5D006451C7 /* Sources */,
@@ -276,9 +276,9 @@
 			dependencies = (
 				2D02E4921E0B4A5D006451C7 /* PBXTargetDependency */,
 			);
-			name = "food_app-tvOSTests";
-			productName = "food_app-tvOSTests";
-			productReference = 2D02E4901E0B4A5D006451C7 /* food_app-tvOSTests.xctest */;
+			name = "foodies-tvOSTests";
+			productName = "foodies-tvOSTests";
+			productReference = 2D02E4901E0B4A5D006451C7 /* foodies-tvOSTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -307,7 +307,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "food_app" */;
+			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "foodies" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -320,10 +320,10 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				13B07F861A680F5B00A75B9A /* food_app */,
-				00E356ED1AD99517003FC87E /* food_appTests */,
-				2D02E47A1E0B4A5D006451C7 /* food_app-tvOS */,
-				2D02E48F1E0B4A5D006451C7 /* food_app-tvOSTests */,
+				13B07F861A680F5B00A75B9A /* foodies */,
+				00E356ED1AD99517003FC87E /* foodiesTests */,
+				2D02E47A1E0B4A5D006451C7 /* foodies-tvOS */,
+				2D02E48F1E0B4A5D006451C7 /* foodies-tvOSTests */,
 			);
 		};
 /* End PBXProject section */
@@ -406,7 +406,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-food_app-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-foodies-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -419,7 +419,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-food_app/Pods-food_app-resources.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-foodies/Pods-foodies-resources.sh",
 				"${PODS_CONFIGURATION_BUILD_DIR}/React-Core/AccessibilityResources.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
@@ -428,7 +428,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-food_app/Pods-food_app-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-foodies/Pods-foodies-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		A6632306A032158C4CEA78E0 /* [CP] Check Pods Manifest.lock */ = {
@@ -446,7 +446,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-food_app-tvOS-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-foodies-tvOS-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -459,7 +459,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-food_app-food_appTests/Pods-food_app-food_appTests-resources.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-foodies-foodiesTests/Pods-foodies-foodiesTests-resources.sh",
 				"${PODS_CONFIGURATION_BUILD_DIR}/React-Core/AccessibilityResources.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
@@ -468,7 +468,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-food_app-food_appTests/Pods-food_app-food_appTests-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-foodies-foodiesTests/Pods-foodies-foodiesTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		B072BA88DFBB1790DE0D2208 /* [CP] Check Pods Manifest.lock */ = {
@@ -486,7 +486,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-food_app-food_appTests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-foodies-foodiesTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -508,7 +508,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-food_app-tvOSTests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-foodies-tvOSTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -560,7 +560,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				00E356F31AD99517003FC87E /* food_appTests.m in Sources */,
+				00E356F31AD99517003FC87E /* foodiesTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -586,7 +586,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2DCD954D1E0B4F2C00145EB5 /* food_appTests.m in Sources */,
+				2DCD954D1E0B4F2C00145EB5 /* foodiesTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -595,12 +595,12 @@
 /* Begin PBXTargetDependency section */
 		00E356F51AD99517003FC87E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 13B07F861A680F5B00A75B9A /* food_app */;
+			target = 13B07F861A680F5B00A75B9A /* foodies */;
 			targetProxy = 00E356F41AD99517003FC87E /* PBXContainerItemProxy */;
 		};
 		2D02E4921E0B4A5D006451C7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 2D02E47A1E0B4A5D006451C7 /* food_app-tvOS */;
+			target = 2D02E47A1E0B4A5D006451C7 /* foodies-tvOS */;
 			targetProxy = 2D02E4911E0B4A5D006451C7 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -608,14 +608,14 @@
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 06BD2A2D89EBE4B95DE8EEEC /* Pods-food_app-food_appTests.debug.xcconfig */;
+			baseConfigurationReference = 06BD2A2D89EBE4B95DE8EEEC /* Pods-foodies-foodiesTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = food_appTests/Info.plist;
+				INFOPLIST_FILE = foodiesTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				OTHER_LDFLAGS = (
@@ -625,17 +625,17 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/food_app.app/food_app";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/foodies.app/foodies";
 			};
 			name = Debug;
 		};
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F6343216A7145D5AFE8D0445 /* Pods-food_app-food_appTests.release.xcconfig */;
+			baseConfigurationReference = F6343216A7145D5AFE8D0445 /* Pods-foodies-foodiesTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
-				INFOPLIST_FILE = food_appTests/Info.plist;
+				INFOPLIST_FILE = foodiesTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				OTHER_LDFLAGS = (
@@ -645,19 +645,19 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/food_app.app/food_app";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/foodies.app/foodies";
 			};
 			name = Release;
 		};
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C9665AC7A66057286B595458 /* Pods-food_app.debug.xcconfig */;
+			baseConfigurationReference = C9665AC7A66057286B595458 /* Pods-foodies.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_BITCODE = NO;
-				INFOPLIST_FILE = food_app/Info.plist;
+				INFOPLIST_FILE = foodies/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
@@ -665,7 +665,7 @@
 					"-lc++",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = food_app;
+				PRODUCT_NAME = foodies;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -674,12 +674,12 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1E2849C0DF86AD553C94D73F /* Pods-food_app.release.xcconfig */;
+			baseConfigurationReference = 1E2849C0DF86AD553C94D73F /* Pods-foodies.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				INFOPLIST_FILE = food_app/Info.plist;
+				INFOPLIST_FILE = foodies/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
@@ -687,7 +687,7 @@
 					"-lc++",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = food_app;
+				PRODUCT_NAME = foodies;
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -695,7 +695,7 @@
 		};
 		2D02E4971E0B4A5E006451C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8CB5181E10A92EDE777A0D00 /* Pods-food_app-tvOS.debug.xcconfig */;
+			baseConfigurationReference = 8CB5181E10A92EDE777A0D00 /* Pods-foodies-tvOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -706,14 +706,14 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_TESTABILITY = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "food_app-tvOS/Info.plist";
+				INFOPLIST_FILE = "foodies-tvOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.food_app-tvOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.foodies-tvOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
 				TARGETED_DEVICE_FAMILY = 3;
@@ -723,7 +723,7 @@
 		};
 		2D02E4981E0B4A5E006451C7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FF81FDCA951E45D37CA24906 /* Pods-food_app-tvOS.release.xcconfig */;
+			baseConfigurationReference = FF81FDCA951E45D37CA24906 /* Pods-foodies-tvOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -734,14 +734,14 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "food_app-tvOS/Info.plist";
+				INFOPLIST_FILE = "foodies-tvOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.food_app-tvOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.foodies-tvOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
 				TARGETED_DEVICE_FAMILY = 3;
@@ -751,7 +751,7 @@
 		};
 		2D02E4991E0B4A5E006451C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 026FA84AB9978D91D8903099 /* Pods-food_app-tvOSTests.debug.xcconfig */;
+			baseConfigurationReference = 026FA84AB9978D91D8903099 /* Pods-foodies-tvOSTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ANALYZER_NONNULL = YES;
@@ -761,24 +761,24 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_TESTABILITY = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "food_app-tvOSTests/Info.plist";
+				INFOPLIST_FILE = "foodies-tvOSTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.food_app-tvOSTests";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.foodies-tvOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/food_app-tvOS.app/food_app-tvOS";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/foodies-tvOS.app/foodies-tvOS";
 				TVOS_DEPLOYMENT_TARGET = 10.1;
 			};
 			name = Debug;
 		};
 		2D02E49A1E0B4A5E006451C7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = ED175312CEF634A46285D9DA /* Pods-food_app-tvOSTests.release.xcconfig */;
+			baseConfigurationReference = ED175312CEF634A46285D9DA /* Pods-foodies-tvOSTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ANALYZER_NONNULL = YES;
@@ -788,17 +788,17 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "food_app-tvOSTests/Info.plist";
+				INFOPLIST_FILE = "foodies-tvOSTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.food_app-tvOSTests";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.foodies-tvOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/food_app-tvOS.app/food_app-tvOS";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/foodies-tvOS.app/foodies-tvOS";
 				TVOS_DEPLOYMENT_TARGET = 10.1;
 			};
 			name = Release;
@@ -919,7 +919,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "food_appTests" */ = {
+		00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "foodiesTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				00E356F61AD99517003FC87E /* Debug */,
@@ -928,7 +928,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "food_app" */ = {
+		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "foodies" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				13B07F941A680F5B00A75B9A /* Debug */,
@@ -937,7 +937,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2D02E4BA1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "food_app-tvOS" */ = {
+		2D02E4BA1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "foodies-tvOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2D02E4971E0B4A5E006451C7 /* Debug */,
@@ -946,7 +946,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "food_app-tvOSTests" */ = {
+		2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "foodies-tvOSTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2D02E4991E0B4A5E006451C7 /* Debug */,
@@ -955,7 +955,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "food_app" */ = {
+		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "foodies" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				83CBBA201A601CBA00E9B192 /* Debug */,

@@ -129,7 +129,7 @@ android {
     }
 
     defaultConfig {
-        applicationId "com.food_app"
+        applicationId "com.foodies"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1
