@@ -9,6 +9,7 @@ import Header from '../components/shared/Header';
 import RatingAndReview from '../components/RatingAndReview';
 import ReservationModal from '../components/modals/ReservationModal';
 import ImageGallery from '../components/ImageGallery';
+import RestaurantReviewCard from '../components/cards/RestaurantReviewCard';
 
 import styles from './restaurantDetails-styles';
 
@@ -47,7 +48,8 @@ class RestaurantDetails extends React.PureComponent {
                     <FastImage source={require('../assets/images/map2.png')} style={{ height: 180 }} resizeMode="contain" />
                     <View style={styles.details}>
                         <Button title={'Make reservation'} onPress={this.handleModal} />
-                        
+                        <RestaurantReviewCard />
+                        <RestaurantReviewCard />
                     </View>
                 </ScrollView>
                 <ReservationModal isModalOpen={this.state.isModalOpen} onRequestClose={this.handleModal} />
