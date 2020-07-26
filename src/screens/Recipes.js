@@ -10,13 +10,13 @@ import styles from './recipes-styles';
 
 class Recipes extends React.PureComponent {
 
-    renderItem = ({ item }) => {
+    renderItem = ({ item, index }) => {
         return (
             <RecipeCard
-                tagline="Start your day right"
-                onPress={() => this.props.navigation.navigate(screenNames.RECIPE_CATEGORY, { headerTitle: 'Breakfast' })}
-                title="Breakfast"
-                imageSource={require('../assets/images/sample.jpg')} />
+                tagline={item.tagline}
+                onPress={() => this.props.navigation.navigate(screenNames.RECIPE_CATEGORY, { headerTitle: item.categoryName, index })}
+                title={item.categoryName}
+                imageSource={{ uri: item.thumbnail }} />
         );
     }
 

@@ -35,7 +35,10 @@ class RestaurantDetails extends React.PureComponent {
                         rightIconSource={require('../assets/icons/bookmark.png')}
                         navigation={this.props.navigation} />
                 </View>
-                <ImageGallery navigation={this.props.navigation} />
+                <ImageGallery 
+                    navigation={this.props.navigation}
+                    title=''
+                    thumbnails={[]} />
                 <DetailsBar>
                     <DetailBarItem icon={require('../assets/icons/cash.png')} title={'€€'} />
                     <RatingAndReview 

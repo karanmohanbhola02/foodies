@@ -30,7 +30,7 @@ const ReservationModal = ({ isModalOpen, onRequestClose }) => {
                 </ScrollView>
             </View>
             <SafeAreaView style={styles.buttonContainer}>
-                <Button title={'Pay'} />
+                <Button title={'Pay'} onPress={() => alert('coming soon.')} />
             </SafeAreaView>
         </Modal>
     )

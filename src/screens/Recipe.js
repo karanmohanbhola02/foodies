@@ -25,32 +25,40 @@ class Recipes extends React.PureComponent {
     }
 
     render() {
+        const { recipeCategory, route } = this.props;
         return (
             <View style={styles.container}>
                 <SafeAreaView style={styles.header}>
                     <Header 
-                        prevTitle={'Recipes'} 
+                        prevTitle={route.params.prevHeaderTitle} 
                         isBackgroundTransparent
+                        rightIconPress={() => alert('bookmark')}
                         rightIconSource={require('../assets/icons/bookmark.png')}
                         navigation={this.props.navigation} />
                 </SafeAreaView>
-                <ImageGallery navigation={this.props.navigation} />
+                <ImageGallery 
+                    navigation={this.props.navigation}
+                    title={recipeCategory.name}
+                    thumbnails={recipeCategory.thumbnails} />
                 <DetailsBar>
-                    <DetailBarItem icon={require('../assets/icons/restaurantsSelected.png')} title={'6 people'} />
-                    <DetailBarItem icon={require('../assets/icons/clock.png')} title={'45 minutes'} />
+                    <DetailBarItem icon={require('../assets/icons/restaurantsSelected.png')} title={`${recipeCategory.people} people`} />
+                    <DetailBarItem icon={require('../assets/icons/clock.png')} title={recipeCategory.time} />
                 </DetailsBar>
                 <View style={styles.details}>
                     <Button title={'See ingredients'} onPress={this.handleModal} />
-                    <InfoList details={[1, 2, 3, 4]} />
+                    <InfoList details={recipeCategory.recipeSteps} />
                 </View>
-                <IngredientModal isModalOpen={this.state.isModalOpen} onRequestClose={this.handleModal} />
+                <IngredientModal 
+                    data={recipeCategory.ingredients}
+                    isModalOpen={this.state.isModalOpen} 
+                    onRequestClose={this.handleModal} />
             </View>
         );
     }
 }
 
-const mapStateToProps = (state) => ({
-    recipes: state.recipes.recipes
+const mapStateToProps = (state, ownProps) => ({
+    recipeCategory: state.recipes.recipes[ownProps.route.params.prevIndex].subCategories[ownProps.route.params.index]
 });
 
 const mapDispatchToProps = {

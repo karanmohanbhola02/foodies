@@ -10,27 +10,27 @@ import styles from './recipes-styles';
 
 class RecipeCategory extends React.PureComponent {
 
-    renderItem = ({ item }) => {
+    renderItem = ({ item, index }) => {
         return (
             <RecipeCategoryCard
-                tagline="Start your day right"
-                title="Breakfast"
-                onPress={() => this.props.navigation.navigate(screenNames.RECIPE)}
-                imageSource={require('../assets/images/sample.jpg')} />
+                tagline={`${item.people} people . ${item.time}`}
+                title={item.name}
+                onPress={() => this.props.navigation.navigate(screenNames.RECIPE, { prevHeaderTitle: this.props.route.params.headerTitle, index, prevIndex: this.props.route.params.index })}
+                imageSource={{ uri: item.thumbnails[0] }} />
         );
     }
 
     render() {
-        const { recipes, navigation } = this.props;
+        const { recipeCategories, navigation, route } = this.props;
         
         return (
             <SafeAreaView>
                 <View style={styles.container}>
-                    <Header prevTitle={'Recipes'} currentTitle="Breakfast" navigation={navigation} />
+                    <Header prevTitle={'Recipes'} currentTitle={route.params.headerTitle} navigation={navigation} />
                     <FlatList
                         showsVerticalScrollIndicator={false}
                         style={styles.listContainer}
-                        data={recipes}
+                        data={recipeCategories}
                         renderItem={this.renderItem}
                         keyExtractor={(item, index) => `${index}`}
                     />
@@ -40,8 +40,8 @@ class RecipeCategory extends React.PureComponent {
     }
 }
 
-const mapStateToProps = (state) => ({
-    recipes: state.recipes.recipes
+const mapStateToProps = (state, ownProps) => ({
+    recipeCategories: state.recipes.recipes[ownProps.route.params.index].subCategories
 });
 
 const mapDispatchToProps = {

@@ -15,7 +15,7 @@ const styles = StyleSheet.create({
         fontStyle: "normal",
         lineHeight: 14,
         letterSpacing: -0.24,
-        color: palette.white70
+        color: palette.white
     },
     title: {
         fontSize: 28,

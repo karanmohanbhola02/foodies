@@ -8,7 +8,7 @@ import IngredientListItem from '../IngredientListItem';
 
 import styles from './ingredientModal-styles';
 
-const IngredientModal = ({ isModalOpen, onRequestClose }) => {
+const IngredientModal = ({ isModalOpen, onRequestClose, data }) => {
     return (
         <Modal
             isModalOpen={isModalOpen}
@@ -18,13 +18,13 @@ const IngredientModal = ({ isModalOpen, onRequestClose }) => {
                 <FlatList
                     style={styles.listContainer}
                     showsVerticalScrollIndicator={false}
-                    data={[1,2,3,4,5,6, 7, 8, 9, 10]}
+                    data={data}
                     ItemSeparatorComponent={() => <View style={styles.separator} />}
-                    renderItem={({ item, index }) => <IngredientListItem title={'Salt'} subTitle={'½ teaspoon'} onPress={() => {}} isSelected={false} />}
+                    renderItem={({ item, index }) => <IngredientListItem title={item.name} subTitle={item.quantity} onPress={() => {}} isSelected={false} />}
                     keyExtractor={(item, index) => `${index}`}
                 />
                 <SafeAreaView style={styles.buttonContainer}>
-                    <Button title={'Add to Reminders'} />
+                    <Button title={'Add to Reminders'} onPress={() => alert('coming soon.')} />
                 </SafeAreaView>
             </View>
         </Modal>

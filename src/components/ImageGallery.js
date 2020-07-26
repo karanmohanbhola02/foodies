@@ -5,7 +5,7 @@ import { palette } from '../theme';
 
 import styles from './imageGallery-styles';
 
-const ImageGallery = ({ }) => {
+const ImageGallery = ({ title, thumbnails }) => {
     return (
         <View style={styles.container}>
             <Swiper
@@ -13,18 +13,13 @@ const ImageGallery = ({ }) => {
                 paginationStyle={styles.pagination}
                 activeDotColor={palette.white}
                 dotColor={palette.offWhite}>
-                <ImageBackground source={require('../assets/images/sample.jpg')} style={styles.imageBackground}>
-                    <Text style={styles.text}>Belgian Waffles</Text>
-                </ImageBackground>
-                <ImageBackground source={require('../assets/images/sample.jpg')} style={styles.imageBackground}>
-                    <Text style={styles.text}>Belgian Waffles</Text>
-                </ImageBackground>
-                <ImageBackground source={require('../assets/images/sample.jpg')} style={styles.imageBackground}>
-                    <Text style={styles.text}>Belgian Waffles</Text>
-                </ImageBackground>
-                <ImageBackground source={require('../assets/images/sample.jpg')} style={styles.imageBackground}>
-                    <Text style={styles.text}>Belgian Waffles</Text>
-                </ImageBackground>
+                {thumbnails.map((thumbnail, index) => {
+                    return (
+                        <ImageBackground key={index} source={{ uri: thumbnail }} style={styles.imageBackground}>
+                            <Text style={styles.text}>{title}</Text>
+                        </ImageBackground>
+                    );
+                })}
             </Swiper>
         </View>
     );

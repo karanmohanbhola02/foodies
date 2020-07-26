@@ -1,7 +1,8 @@
 import actions from '../constants';
+import { restaurants as restaurantsData } from '../../constants';
 
 const initialState = {
-    restaurants: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+    restaurants: restaurantsData
 };
 
 const restaurants = (state = initialState, action) => {

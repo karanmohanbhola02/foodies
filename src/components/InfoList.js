@@ -12,7 +12,7 @@ const InfoList = ({ details }) => {
                 style={styles.listContainer}
                 data={details}
                 ItemSeparatorComponent={() => <View style={styles.separator} />}
-                renderItem={({ item, index }) => <InfoCard index={index + 1} />}
+                renderItem={({ item, index }) => <InfoCard index={index + 1} title={item} />}
                 keyExtractor={(item, index) => `${index}`}
             />
         </View>

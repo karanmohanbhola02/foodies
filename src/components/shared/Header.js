@@ -25,10 +25,10 @@ const HeaderCenter = ({ currentTitle }) => {
     );
 }
 
-const HeaderRight = ({ iconSource }) => {
+const HeaderRight = ({ iconSource, rightIconPress }) => {
     return (
         <View style={styles.headerRightContainer}>
-            <TouchableOpacity onPress={() => alert('Search!')} hitSlop={{ top: 20, left: 20, bottom: 20, right: 20 }}>
+            <TouchableOpacity onPress={rightIconPress ? rightIconPress : () => {}} hitSlop={{ top: 20, left: 20, bottom: 20, right: 20 }}>
                 <FastImage
                     style={{ width: 20, height: 20 }}
                     source={iconSource || require('../../assets/icons/search.png')}
@@ -39,13 +39,13 @@ const HeaderRight = ({ iconSource }) => {
     );
 }
 
-const Header = ({ rootScreenTitle, isRootScreen, prevTitle, currentTitle, navigation, isBackgroundTransparent, rightIconSource }) => {
+const Header = ({ rootScreenTitle, isRootScreen, prevTitle, currentTitle, navigation, isBackgroundTransparent, rightIconSource, rightIconPress }) => {
     return (
         <View style={[styles.container, isBackgroundTransparent && { backgroundColor: 'transparent' }]}>
             <View style={styles.headerContainer}>
                 {!isRootScreen ? <HeaderLeft prevTitle={prevTitle} navigation={navigation} /> : <View />}
                 {!isRootScreen ? <HeaderCenter currentTitle={currentTitle} /> : <View />}
-                <HeaderRight iconSource={rightIconSource} />
+                <HeaderRight iconSource={rightIconSource} rightIconPress={rightIconPress} />
             </View>
             {isRootScreen ? <View style={styles.rootScreenTitle}>
                 <Text style={styles.text} numberOfLines={1} ellipsizeMode="tail">{rootScreenTitle}</Text>
